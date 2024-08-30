@@ -21,7 +21,7 @@ console.log(__path);
 app.use(express.json());
 
 app.post("/test", (req, res) => {
-  res.send({ text: "Babe you in TOKENSHACK TST, and the service is working" });
+  res.send({ text: "Babe you in MEMEMARKET EDMEM, and the service is working" });
 });
 
 app.get("/", (req, res) => {
