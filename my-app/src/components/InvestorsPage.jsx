@@ -5,6 +5,9 @@ import { gsap } from 'gsap';
 const InvestorsPage = () => {
   const [selectedCard, setSelectedCard] = useState(null);
   const [walletInput, setWalletInput] = useState("");
+  const [amountInput, setamountInput] = useState("");
+
+
 
   useEffect(() => {
     gsap.fromTo(".card", 
@@ -41,6 +44,7 @@ const InvestorsPage = () => {
   const handleClosePopup = () => {
     setSelectedCard(null);
     setWalletInput("");
+    setamountInput("");
   };
 
   const handlePay = () => {
@@ -87,6 +91,15 @@ const InvestorsPage = () => {
               onChange={(e) => setWalletInput(e.target.value)}
               placeholder="Enter your wallet address"
             />
+
+            <input 
+              type="number"
+              className="w-full p-2 mb-4 border border-gray-300 rounded-lg"
+              value={amountInput}
+              onChange={(e) => setamountInput(e.target.value)}
+              placeholder="Enter amount"
+            />
+
             <div className="flex justify-end gap-4">
               <button 
                 className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg"

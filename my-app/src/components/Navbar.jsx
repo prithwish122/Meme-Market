@@ -84,7 +84,7 @@ const Navbar = () => {
           className="ml-3 text-3xl font-extrabold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-violet-500 to-purple-700"
           style={{ fontFamily: 'Montserrat, sans-serif' }}
         >
-          Meme Bid
+          Meme Market
         </span>
       </Link>
       <div className="flex items-center gap-4">
