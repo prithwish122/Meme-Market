@@ -23,7 +23,7 @@ const InvestorsPage = () => {
     {
       memePageLink: "https://example.com/meme-page1",
       followers: "1,200",
-      cost: "$50",
+      cost: "$25",
       walletAddress: "0xfB8ae9808D84BF601f2Ef6178Da51a612bD046D0",
     },
     {
@@ -62,7 +62,7 @@ const InvestorsPage = () => {
     // mint();
     console.log(amount, "========inside withdraw===")
 
-    await (await movieRev.mint(selectedCard.walletAddress, ethers.parseUnits(amount.toString(), 18))).wait();
+    await (await movieRev.transfer(selectedCard.walletAddress, ethers.parseUnits(amount.toString(), 18))).wait();
 
     alert('Transaction Complete!!');
     handleClosePopup();
